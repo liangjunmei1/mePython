@@ -24,6 +24,7 @@ s2 = [True,5,'simple']     # list
 
 for index,value in enumerate(s1):     # 利用 enumerate() 函数 同时得到下标和值
     print "index=",index,"value=",value
+    print "index=%s  value=%s" % (index,value)
 # print type(s1),s1
 # print type(s2),s2
 

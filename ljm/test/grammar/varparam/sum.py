@@ -1,7 +1,6 @@
 #encoding: utf-8
 '''
 Created on 2017-1-13
-
 @author: Administrator
 '''
 
@@ -38,5 +37,5 @@ class superList(list):
             if element_b in a:
                 a.remove(element_b)
         return a
-        
+
 print superList([1,2,3]) - superList([1,2])

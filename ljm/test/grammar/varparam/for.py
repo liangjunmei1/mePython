@@ -53,7 +53,7 @@ enumerate() :在每次循环中，可以同时得到下标和元素
             实际上，enumerate(),在每次循环中返回的是包含每个元素的定值表，两个元素分别赋值 index，char
 '''
 for (index,char) in enumerate(s):
-    print index,char
+    print "index=%s ,char=%s" % (index,char)
 
 '''
 如果有多个等长的序列，然后想要每次循环时从各个序列分别取出一个元素，可以利用 zip() 来实现
