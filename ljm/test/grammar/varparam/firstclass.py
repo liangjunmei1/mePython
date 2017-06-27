@@ -8,4 +8,7 @@ class  test():
     def __init__(self):   #构造函数， self 类似于Java 里 的 this
         pass
 
-t = test() # 实例化，没有new 
+    def returnValue(self): #返回值，可以有多个
+        return 1, 2
+
+t = test() # 实例化，没有new

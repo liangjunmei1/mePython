@@ -1,7 +1,6 @@
 #encoding:utf-8
 '''
 Created on 2017-1-13
-
 @author: Administrator
 '''
 
@@ -28,3 +27,14 @@ def runYear(year,month,day):
     else:
         return False
 print runYear(2016, 11, 11)
+
+"""
+可变参数,后面的 * 就是通配符的意思，能够匹配我们的参数个数
+"""
+def varFun(var1,*values):
+    # print ("the first parameter is : "  + var1)
+    for var in values:
+        print var
+
+varFun(str(1))
+varFun(str(1),100,200,300,400,500)

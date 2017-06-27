@@ -1,17 +1,14 @@
 #encoding: utf-8
 '''
 Created on 2017-1-13
-
 @author: Administrator
 '''
 #参数传递顺序： 先位置，在关键字，在包裹，在包裹关键字
-
 '''
 根据位置传递
 '''
 def f(a,b,c):
     return a+b+c
-
 #print f(1,2,3)
 
 '''
@@ -29,7 +26,7 @@ def f(a,b,c):
 '''
 def f2(a,b,c=4):
     print a,b,c
-    
+
 f2(1,2)
 f2(1,2,3)
 
@@ -49,9 +46,9 @@ func(1,2,3,4,5,6)
 def func2(**dict):
     print type(dict)
     print dict
-    
-func2(a=1,b=2,c=3) 
-func2(a=1,b=2) 
+
+func2(a=1,b=2,c=3)
+func2(a=1,b=2)
 
 '''
 *和** 也可以在调用的时候使用，即 解包裹(unpacking)
