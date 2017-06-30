@@ -2,8 +2,8 @@
 import MySQLdb,os
 '''函数封装成class'''
 class dbClient():
-    
-    def __init__(self,host='127.0.0.1',user='root',passwd='root',db='core',port=3306,charset="utf8"):
+
+    def __init__(self,host='10.10.10.61',user='root',passwd='root',db='core',port=3306,charset="utf8"):
         self.host = host
         self.user = user
         self.passwd = passwd
@@ -17,8 +17,8 @@ class dbClient():
             os._exit(0)
         else:
             '''得到游标'''
-            self.cur = self.conn.cursor() 
-           
+            self.cur = self.conn.cursor()
+
     '''insert 单条记录'''
     def insert_data(self,sql):
         try:
@@ -34,7 +34,7 @@ class dbClient():
         finally:
             self.cur.close()
             self.conn.close()
-            
+
     '''查询sql'''
     def select_data(self,sql):
         try:
@@ -50,9 +50,8 @@ class dbClient():
         finally:
             self.cur.close()
             self.conn.close()
-        
+
 
 #dbClient().insert_data("insert into test(name,value) values('ljm2','2')")
 result = dbClient().select_data("select * from test where name = 'ljm2'")
 print result
-            

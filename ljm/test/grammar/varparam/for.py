@@ -64,7 +64,6 @@ tc = ['a','b','c']
 for (a,b,c) in zip(ta,tb,tc):
     print (a,b,c)
 
-
 ta = [1,2]
 tb = [3,4]
 

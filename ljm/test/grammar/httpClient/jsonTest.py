@@ -17,7 +17,15 @@ data = [{'a':1,'b':2,'c':3 ,'d':4,'e':5}]
 jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}'
 
 print type(data),type(json.dumps(data))
-print json.dumps(data)
+"""
+indent 格式化 显示
+[
+  {
+    "a": 1,
+  }
+]
+"""
+print json.dumps(data,indent=2)
 print demjson.encode(data)
 
 

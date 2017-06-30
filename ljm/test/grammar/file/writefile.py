@@ -1,7 +1,6 @@
 #coding=utf-8
 '''
 Created on 2016-2-14
-
 @author: ljm
 '''
 
@@ -20,6 +19,6 @@ fh = open("test.txt","a")
 fh.write("str")
 fh.close
 
- 
+
 #判断文件的打开方式
 print fh.mode

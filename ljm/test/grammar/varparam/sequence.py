@@ -22,9 +22,9 @@ s2 = [True,5,'simple']     # list
 # for temp in range(0,s1.__len__()):  #通过下标得到 s1 中元素的值
 #     print s1[temp],temp
 
-for index,value in enumerate(s1):     # 利用 enumerate() 函数 同时得到下标和值
-    print "index=",index,"value=",value
-    print "index=%s  value=%s" % (index,value)
+# for index,value in enumerate(s1):     # 利用 enumerate() 函数 同时得到下标和值
+#     print "index=",index,"value=",value
+#     print "index=%s  value=%s" % (index,value)
 # print type(s1),s1
 # print type(s2),s2
 
@@ -46,3 +46,9 @@ for index,value in enumerate(s1):     # 利用 enumerate() 函数 同时得到�
 # print str[0:3]
 # print type(str[0]) #str[0] = 'A'
 # print str[6:0:-1]
+
+"""join"""
+# str = ['1','2','3']
+# str = ('1','2','3')
+str = {'1':11 ,'2':22,'3':33}
+print type("".join(str)),"".join(str)
